@@ -15,12 +15,12 @@ server <- function(id) {
     welcome <- modalDialog(
       title = div(
         div(
-          img(src="static/udclogo.png",
-              alt="UDC logo",
-              height="50"),
-          img(src="static/feelogo.png",
-              alt="FEE logo",
-              height="50")
+          img(src = "static/udclogo.png",
+              alt = "UDC logo",
+              height = "50"),
+          img(src = "static/feelogo.png",
+              alt = "FEE logo",
+              height = "50")
         ),
         div(
           h1("Trabajo Final de Máster")
@@ -47,7 +47,7 @@ server <- function(id) {
         financiero en constante evolución.')
         ),
       easyClose = T,
-      footer = div("Creado por: David Díaz Rodríguez", style="text-align:center;")
+      footer = div("Creado por: David Díaz Rodríguez", style = "text-align:center;")
     )
     
     # Showing welcome message

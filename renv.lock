@@ -8,11 +8,6 @@
       }
     ]
   },
-  "Python": {
-    "Version": "3.11.5",
-    "Type": "virtualenv",
-    "Name": "F:/APPs/TFM_dashboard/renv/python/virtualenvs/renv-python-3.11"
-  },
   "Packages": {
     "R.cache": {
       "Package": "R.cache",

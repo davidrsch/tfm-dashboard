@@ -9,17 +9,6 @@
     ]
   },
   "Packages": {
-    "KernSmooth": {
-      "Package": "KernSmooth",
-      "Version": "2.23-22",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "stats"
-      ],
-      "Hash": "2fecebc3047322fa5930f74fae5de70f"
-    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-60",
@@ -167,18 +156,6 @@
       ],
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
     },
-    "boot": {
-      "Package": "boot",
-      "Version": "1.3-28.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "graphics",
-        "stats"
-      ],
-      "Hash": "9a052fbcbe97a98ceb18dbfd30ebd96e"
-    },
     "box": {
       "Package": "box",
       "Version": "1.1.3",
@@ -241,19 +218,6 @@
       ],
       "Hash": "9b2191ede20fa29828139b9900922e51"
     },
-    "class": {
-      "Package": "class",
-      "Version": "7.3-22",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "MASS",
-        "R",
-        "stats",
-        "utils"
-      ],
-      "Hash": "f91f6b29f38b8c280f2b9477787d4bb2"
-    },
     "cli": {
       "Package": "cli",
       "Version": "3.6.1",
@@ -264,20 +228,6 @@
         "utils"
       ],
       "Hash": "89e6d8219950eac806ae0c489052048a"
-    },
-    "cluster": {
-      "Package": "cluster",
-      "Version": "2.1.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "grDevices",
-        "graphics",
-        "stats",
-        "utils"
-      ],
-      "Hash": "5edbbabab6ce0bf7900a74fd4358628e"
     },
     "codetools": {
       "Package": "codetools",
@@ -512,19 +462,6 @@
         "rlang"
       ],
       "Hash": "c2efdd5f0bcd1ea861c2d4e2a883a67d"
-    },
-    "foreign": {
-      "Package": "foreign",
-      "Version": "0.8-84",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "methods",
-        "stats",
-        "utils"
-      ],
-      "Hash": "467ec0ca895d4e61a22cfbac9bccddf8"
     },
     "fs": {
       "Package": "fs",
@@ -810,19 +747,6 @@
       ],
       "Hash": "c269b06beb2bbadb0d058c0e6fa4ec3d"
     },
-    "lubridate": {
-      "Package": "lubridate",
-      "Version": "1.9.3",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "generics",
-        "methods",
-        "timechange"
-      ],
-      "Hash": "680ad542fbcf801442c83a6ac5a2126c"
-    },
     "magrittr": {
       "Package": "magrittr",
       "Version": "2.0.3",
@@ -895,18 +819,6 @@
         "utils"
       ],
       "Hash": "0984ce8da8da9ead8643c5cbbb60f83e"
-    },
-    "nnet": {
-      "Package": "nnet",
-      "Version": "7.3-19",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "stats",
-        "utils"
-      ],
-      "Hash": "2c797b46eea7fb58ede195bc0b1f1138"
     },
     "openssl": {
       "Package": "openssl",
@@ -1175,19 +1087,6 @@
       ],
       "Hash": "d65e35823c817f09f4de424fcdfa812a"
     },
-    "rpart": {
-      "Package": "rpart",
-      "Version": "4.1.19",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "grDevices",
-        "graphics",
-        "stats"
-      ],
-      "Hash": "b3c892a81783376cc2204af0f5805a80"
-    },
     "rprojroot": {
       "Package": "rprojroot",
       "Version": "2.0.3",
@@ -1281,19 +1180,6 @@
       ],
       "Hash": "5f5a7629f956619d519205ec475fe647"
     },
-    "spatial": {
-      "Package": "spatial",
-      "Version": "7.3-17",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "graphics",
-        "stats",
-        "utils"
-      ],
-      "Hash": "1229a01b4ec059e9f2396724f2ec9010"
-    },
     "stringi": {
       "Package": "stringi",
       "Version": "1.7.12",
@@ -1342,22 +1228,6 @@
         "withr"
       ],
       "Hash": "d61238fd44fc63c8adf4565efe8eb682"
-    },
-    "survival": {
-      "Package": "survival",
-      "Version": "3.5-7",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "Matrix",
-        "R",
-        "graphics",
-        "methods",
-        "splines",
-        "stats",
-        "utils"
-      ],
-      "Hash": "b8e943d262c3da0b0febd3e04517c197"
     },
     "sys": {
       "Package": "sys",
@@ -1453,17 +1323,6 @@
         "withr"
       ],
       "Hash": "79540e5fcd9e0435af547d885f184fd5"
-    },
-    "timechange": {
-      "Package": "timechange",
-      "Version": "0.2.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "cpp11"
-      ],
-      "Hash": "8548b44f79a35ba1791308b61e6012d7"
     },
     "tinytex": {
       "Package": "tinytex",

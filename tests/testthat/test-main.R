@@ -1,8 +1,9 @@
 box::use(
   shinytest2[test_app],
-  testthat[...],
+  testthat[test_that],
 )
 
-test_that("App works", {
-  test_app("../../")
+test_that("Run tests", {
+  test_app("../../",
+           filter = "shinytest2")
 })

@@ -32,7 +32,7 @@ ui <- function(id) {
       # Filter to select the range date of the results to plot
       div(
         class = "component-box-inps",
-        dateRangeInput2(
+        DateRangeInput2(
                         inputId = ns("daterange1"),
                         label = "Rango de fechas:",
                         start = "2005-07-31",

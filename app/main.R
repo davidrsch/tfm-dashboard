@@ -15,12 +15,13 @@ ui <- function(id) {
 
   bootstrapPage(
     # Title
-    h1(
-       "Aplicación de redes neuronales artificiales y programación cuadrática en la gestión de carteras"),
+    h1(title),
     # Loading UI from "modelselect" module
     modelselect$ui(ns("returnschart"))
   )
 }
+
+load("./app/static/results.Rdata")
 
 #' @export
 server <- function(id) {
@@ -30,7 +31,6 @@ server <- function(id) {
 
     # Loading data
     print(getwd())
-    load("./app/static/results.Rdata")
 
     # Loading server from "modelselect" module to displau returns and
     # indicators outputs

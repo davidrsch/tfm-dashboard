@@ -29,9 +29,9 @@ server <- function(id) {
       ),
       div(
         p(
-          'Este dashboard es parte del proyecto presentado como Trabajo Final de Máster en la 
+          "Este dashboard es parte del proyecto presentado como Trabajo Final de Máster en la 
           Facultad de Economía y Empresas de la Universidad de A Coruña para la obtención del 
-          titúlo de Máster Universitario en Banca y Finanzas.'),
+          titúlo de Máster Universitario en Banca y Finanzas."),
         p(
           'El proyecto se titula "Aplicación de redes neuronales artificiales y programación 
           cuadrática en la gestión de carteras". El objetivo del trabajo se examina el potencial 
@@ -45,14 +45,13 @@ server <- function(id) {
           destacando la importancia de utilizar datos actualizados y configurar adecuadamente los 
           modelos para lograr una gestión de carteras más informada y efectiva en un entorno 
           financiero en constante evolución.')
-        ),
+      ),
       easyClose = TRUE,
       footer = div("Creado por: David Díaz Rodríguez", style = "text-align:center;")
     )
-    
+
     # Showing welcome message
     showModal(welcome)
-    
+
   })
-  
 }

@@ -2,7 +2,7 @@
 
 box::use(
   htmltools[a, img],
-  plotly[plotlyOutput, plot_ly, add_lines, layout],
+  plotly[add_lines, layout, plot_ly, plotlyOutput, renderPlotly],
   shiny[div, isolate, moduleServer, NS,
         observeEvent, reactive, selectInput, tagList],
   lubridate[ceiling_date, days, ymd],
@@ -127,7 +127,7 @@ server <- function(
       datai <- indic_data(data, startD, endD)
 
       # Generating output of portfolio returns
-      output$returnschart <- plotly::renderPlotly({
+      output$returnschart <- renderPlotly({
 
         fig <- plot_ly(datar, type = "scatter", mode = "lines")
         fig <- fig |>
@@ -161,15 +161,16 @@ server <- function(
                  yaxis = list(title = "Valores"))
 
         # Show the plot
-        fig})
+        fig
+      })
 
       # Generating output of indicators computed from obtained predictions
-      output$indicatorschart <- plotly::renderPlotly({
+      output$indicatorschart <- renderPlotly({
 
         fig <- plot_ly(datai, type = "scatter", mode = "lines")
         fig <- fig |>
           add_lines(x = ~Date, y = ~meanmse, name = "MSE",
-                   line = list(color = "blue")) |>
+                    line = list(color = "blue")) |>
           add_lines(x = ~Date, y = ~meanrsqrd, name = "R2",
                     line = list(color = "green")) |>
           layout(title = paste0("Indicadores Estructura-", input$modelselect),
@@ -177,9 +178,10 @@ server <- function(
                  legend = list(y = 0.5),
                  xaxis = list(title = "Fecha"),
                  yaxis = list(title = "Valores"))
-
+        
         # Show the plot
-        fig})
+        fig
       })
     })
+  })
 }

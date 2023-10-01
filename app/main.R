@@ -30,8 +30,8 @@ server <- function(id) {
 
     # Loading data
     print(getwd())
-    load("app/static/results.Rdata")
-    
+    load("./app/static/results.Rdata")
+
     # Loading server from "modelselect" module to displau returns and
     # indicators outputs
     modelselect$server(

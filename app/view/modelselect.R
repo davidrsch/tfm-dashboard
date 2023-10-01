@@ -118,13 +118,13 @@ server <- function(
     observeEvent(c(input$modelselect, input$daterange1), {
 
       # Getting start and end date from input
-      startD <- ceiling_date(ymd(input$daterange1[1]), "month") - days(1)
-      endD <- ceiling_date(ymd(input$daterange1[2]), "month") - days(1)
+      startd <- ceiling_date(ymd(input$daterange1[1]), "month") - days(1)
+      endd <- ceiling_date(ymd(input$daterange1[2]), "month") - days(1)
 
       # Getting data from main and extracting results and indicators
       data <- get(paste0("returnsdata", input$modelselect))
-      datar <- returns_data(data, startD, endD)
-      datai <- indic_data(data, startD, endD)
+      datar <- returns_data(data, startd, endd)
+      datai <- indic_data(data, startd, endd)
 
       # Generating output of portfolio returns
       output$returnschart <- renderPlotly({
@@ -136,7 +136,7 @@ server <- function(
           add_lines(x = ~Date, y = ~max_y, name = "RNA",
                     line = list(color = "blue"), legendgroup = "struct1") |>
           add_lines(x = ~Date, y = ~max_95, name = "max95",
-                    line = list(color = "blue"), fill = "tonexty", 
+                    line = list(color = "blue"), fill = "tonexty",
                     fillcolor = "rgba(18,18,255,0.2)", legendgroup = "struct1",
                     showlegend = FALSE) |>
           add_lines(x = ~Date, y = ~min_5, name = "min5",
@@ -148,7 +148,7 @@ server <- function(
                     fillcolor = "rgba(18,18,255,0.2)", legendgroup = "struct1",
                     showlegend = FALSE) |>
           add_lines(x = ~Date, y = ~meanPortre, name = "meanP",
-                    line = list(color = "blue",dash = "dash"),
+                    line = list(color = "blue", dash = "dash"),
                     legendgroup = "struct1", showlegend = FALSE) |>
           add_lines(x = ~Date, y = ~IBEX, name = "IBEX",
                     line = list(color = "red")) |>
@@ -178,7 +178,7 @@ server <- function(
                  legend = list(y = 0.5),
                  xaxis = list(title = "Fecha"),
                  yaxis = list(title = "Valores"))
-        
+
         # Show the plot
         fig
       })

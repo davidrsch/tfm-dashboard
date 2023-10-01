@@ -21,6 +21,7 @@ ui <- function(id) {
   )
 }
 
+# Loadng data
 load("./app/static/results.Rdata")
 
 #' @export
@@ -28,9 +29,6 @@ server <- function(id) {
   moduleServer(id, function(input, output, session) {
     # Loading server from "welcome" module to display welcome message
     welcome$server("message")
-
-    # Loading data
-    print(getwd())
 
     # Loading server from "modelselect" module to displau returns and
     # indicators outputs

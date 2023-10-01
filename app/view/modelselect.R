@@ -10,7 +10,7 @@ box::use(
 
 box::use(
   app/logic/gettingdata[returns_data, indic_data],
-  app/logic/RangeInput[DateRangeInput2]
+  app/logic/RangeInput[date_range_input2]
 )
 
 #' @export
@@ -32,15 +32,15 @@ ui <- function(id) {
       # Filter to select the range date of the results to plot
       div(
         class = "component-box-inps",
-        DateRangeInput2(
-                        InputId = ns("daterange1"),
-                        label = "Rango de fechas:",
-                        start = "2005-07-31",
-                        end = "2023-02-28",
-                        min = "2005-07-31",
-                        max = "2023-02-28",
-                        format = "yyyy-mm",
-                        minview = "months")
+        date_range_input2(
+                          input_id = ns("daterange1"),
+                          label = "Rango de fechas:",
+                          start = "2005-07-31",
+                          end = "2023-02-28",
+                          min = "2005-07-31",
+                          max = "2023-02-28",
+                          format = "yyyy-mm",
+                          minview = "months")
       ),
       # Social media info
       div(

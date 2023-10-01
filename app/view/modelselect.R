@@ -10,7 +10,7 @@ box::use(
 
 box::use(
   app/logic/gettingdata[returns_data, indic_data],
-  app/logic/RangeInput[dateRangeInput2]
+  app/logic/RangeInput[DateRangeInput2]
 )
 
 #' @export
@@ -33,7 +33,7 @@ ui <- function(id) {
       div(
         class = "component-box-inps",
         DateRangeInput2(
-                        inputId = ns("daterange1"),
+                        InputId = ns("daterange1"),
                         label = "Rango de fechas:",
                         start = "2005-07-31",
                         end = "2023-02-28",

@@ -44,10 +44,26 @@ server <- function(id) {
           eficiencia óptima. Este trabajo sienta las bases para futuras investigaciones, 
           destacando la importancia de utilizar datos actualizados y configurar adecuadamente los 
           modelos para lograr una gestión de carteras más informada y efectiva en un entorno 
-          financiero en constante evolución.')
+          financiero en constante evolución.'),
+        div(
+          div(
+              img(src = "static/TFM.png",
+                  alt = "TFM",
+                  height = "200"),
+              p("Trabajo Final de Máster"),
+              style = "display: inline-block;"),
+          div(
+              img(src = "static/Slides.png",
+                  alt = "Presentación",
+                  height = "200"),
+              p("Presentación"),
+              style = "display: inline-block;"),
+          style = "text-align: center;"
+        )
       ),
       easyClose = TRUE,
-      footer = div("Creado por: David Díaz Rodríguez", style = "text-align:center;")
+      footer = div("Creado por: David Díaz Rodríguez", style = "text-align:center;"),
+      size = "l"
     )
 
     # Showing welcome message

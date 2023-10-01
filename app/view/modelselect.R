@@ -146,7 +146,7 @@ server <- function(
           add_lines(x = ~Date, y = ~min_y, name = "min",
                     line = list(color = "blue"), fill = "tonexty",
                     fillcolor = "rgba(18,18,255,0.2)", legendgroup = "struct1",
-                    showlegend = FASE) |>
+                    showlegend = FALSE) |>
           add_lines(x = ~Date, y = ~meanPortre, name = "meanP",
                     line = list(color = "blue",dash = "dash"),
                     legendgroup = "struct1", showlegend = FALSE) |>

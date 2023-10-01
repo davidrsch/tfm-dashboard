@@ -27,7 +27,7 @@ server <- function(id) {
   moduleServer(id, function(input, output, session) {
     # Loading server from "welcome" module to display welcome message
     welcome$server("message")
-  
+
     # Loading data
     load("app/static/results.Rdata")
 

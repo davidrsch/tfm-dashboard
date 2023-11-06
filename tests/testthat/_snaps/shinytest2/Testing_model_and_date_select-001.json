@@ -468,7 +468,7 @@
               0.0070786604451997691,
               0.004883172757131459
             ],
-            "name": "MSE",
+            "name": "<span style=\"font-family: KaTeX_Math; font-style: italic;\">MSE<\/span>",
             "line": {
               "color": "blue"
             },
@@ -871,7 +871,7 @@
               0.075485310947918702,
               0.038266084910898238
             ],
-            "name": "R2",
+            "name": "<span style=\"font-family: KaTeX_Math; font-style: italic;\"><br />                    R<sup>2<\/sup><\/span>",
             "line": {
               "color": "green"
             },
@@ -3885,7 +3885,7 @@
               0.98388575461418404,
               0.98206570700411477
             ],
-            "name": "Means",
+            "name": "Media",
             "line": {
               "color": "green"
             },

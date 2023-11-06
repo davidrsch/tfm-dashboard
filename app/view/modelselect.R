@@ -2,7 +2,8 @@
 
 box::use(
   htmltools[a, img],
-  plotly[add_lines, layout, plot_ly, plotlyOutput, renderPlotly],
+  plotly[add_lines, layout, plot_ly, plotlyOutput,
+         renderPlotly, TeX],
   shiny[div, isolate, moduleServer, NS,
         observeEvent, reactive, selectInput, tagList],
   lubridate[ceiling_date, days, ymd],
@@ -25,7 +26,7 @@ ui <- function(id) {
         class = "component-box-inps",
         selectInput(
           inputId = ns("modelselect"),
-          label = "Model:",
+          label = "Modelo:",
           choices = c("1", "2", "3")
         )
       ),
@@ -152,7 +153,7 @@ server <- function(
                     legendgroup = "struct1", showlegend = FALSE) |>
           add_lines(x = ~Date, y = ~IBEX, name = "IBEX",
                     line = list(color = "red")) |>
-          add_lines(x = ~Date, y = ~Means, name = "Means",
+          add_lines(x = ~Date, y = ~Means, name = "Media",
                     line = list(color = "green")) |>
           layout(title = paste0("Carteras Estructura-", input$modelselect),
                  showlegend = TRUE,
@@ -169,9 +170,12 @@ server <- function(
 
         fig <- plot_ly(datai, type = "scatter", mode = "lines")
         fig <- fig |>
-          add_lines(x = ~Date, y = ~meanmse, name = "MSE",
+          add_lines(x = ~Date, y = ~meanmse,
+                    name = '<span style="font-family: KaTeX_Math; font-style: italic;">MSE</span>',
                     line = list(color = "blue")) |>
-          add_lines(x = ~Date, y = ~meanrsqrd, name = "R2",
+          add_lines(x = ~Date, y = ~meanrsqrd,
+                    name = '<span style="font-family: KaTeX_Math; font-style: italic;">
+                    R<sup>2</sup></span>',
                     line = list(color = "green")) |>
           layout(title = paste0("Indicadores Estructura-", input$modelselect),
                  showlegend = TRUE,

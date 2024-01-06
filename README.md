@@ -2,7 +2,7 @@
 
 ## Aplicación de redes neuronales artificiales y programación cuadrática en la gestión de carteras
 
-<a href=""><img src="projectlogo.png" alt="Project image" width="285" height="285" align="right" style="margin: 0 1em 0 1em"/></a> Este repositorio contiene el código fuente del dashboard construido para el análisis de los resultados obtenidos en el Trabajo de Fin de Máster **"Aplicación de redes neuronales artificiales y programación cuadrática en la gestión de carteras"** de David Díaz Rodríguez y tutelado por Xosé Manuel Martínez Filgueira. El sitio está construido usando [Quarto](https://quarto.org/).
+<a href=""><img src="projectlogo.png" alt="Project image" width="285" align="right" style="margin: 0 1em 0 1em"/></a> Este repositorio contiene el código fuente del dashboard construido para el análisis de los resultados obtenidos en el Trabajo de Fin de Máster **"Aplicación de redes neuronales artificiales y programación cuadrática en la gestión de carteras"** de David Díaz Rodríguez y tutelado por Xosé Manuel Martínez Filgueira. El sitio está construido usando [Quarto](https://quarto.org/).
 
 # English
 

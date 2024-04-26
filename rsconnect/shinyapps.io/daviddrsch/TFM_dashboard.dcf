@@ -5,7 +5,7 @@ account: daviddrsch
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10047855
-bundleId: 7749548
+bundleId: 8554254
 url: https://daviddrsch.shinyapps.io/TFM_dashboard/
 version: 1
 asMultiple: FALSE

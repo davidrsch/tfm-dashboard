@@ -1429,9 +1429,9 @@
     },
     "shinytest2": {
       "Package": "shinytest2",
-      "Version": "0.3.1",
+      "Version": "0.3.2",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R6",
         "callr",
@@ -1439,7 +1439,6 @@
         "chromote",
         "cpp11",
         "crayon",
-        "ellipsis",
         "fs",
         "globals",
         "httr",
@@ -1451,7 +1450,7 @@
         "testthat",
         "withr"
       ],
-      "Hash": "04e60b31d4afef1d221ede5fafb0c6f6"
+      "Hash": "a414c1bb2eb6e2a920742d3ebce84962"
     },
     "shinyvalidate": {
       "Package": "shinyvalidate",

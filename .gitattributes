@@ -1,0 +1,16 @@
+# Normalize all text files to LF in the repo, regardless of the OS used
+# to check them out. This prevents Windows checkouts (CRLF) from showing
+# whole-file diffs when edited on Linux/macOS (LF), and vice versa.
+* text=auto eol=lf
+
+# Explicitly mark known binary files so git never tries to normalize them.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.rds binary
+*.RData binary
+*.Rdata binary
+*.zip binary
